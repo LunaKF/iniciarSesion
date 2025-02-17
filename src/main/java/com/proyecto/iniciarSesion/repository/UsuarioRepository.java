@@ -4,10 +4,11 @@ import java.util.Optional;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.proyecto.iniciarSesion.entity.UsuarioEntity;
 
-public interface UsuarioRepository {
+public interface UsuarioRepository extends JpaRepository<UsuarioEntity, Long> {
 
      Optional<UsuarioEntity> findByEmail(String email);
 

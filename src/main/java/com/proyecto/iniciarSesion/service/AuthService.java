@@ -10,13 +10,11 @@ import jakarta.servlet.http.HttpServletRequest;
 @Service
 public class AuthService {
     
-
-    @Autowired
-    JWTService JWTHelper;
-
     @Autowired
     UsuarioRepository oUsuarioRepository;
 
     @Autowired
     HttpServletRequest oHttpServletRequest;
+
+    
 }
